@@ -1,27 +1,29 @@
 <?php
-namespace Emeka\Todo\Database;
+
+namespace Emeka\Junks\Database\Connections;
+
 use PDO;
 /**
 *
 */
 class Connect extends Driver
 {
-    protected $GetDriver;
+    protected $getDriver;
 
     protected $db_connection;
 
-    protected function GetDriver()
+    protected function getDriver()
     {
-        return $this->UseDriver();
+        return $this->useDriver();
     }
 
-    protected function Connect()
+    protected function connect()
     {
-        $db_host        =  $this->GetDriver()["db_host"];
-        $db_name        =  $this->GetDriver()["db_name"];
-        $db_user        =  $this->GetDriver()["db_user"];
-        $database       =  $this->GetDriver()["database"];
-        $db_password    =  $this->GetDriver()["db_password"];
+        $db_host        =  $this->getDriver()["db_host"];
+        $db_name        =  $this->getDriver()["db_name"];
+        $db_user        =  $this->getDriver()["db_user"];
+        $database       =  $this->getDriver()["database"];
+        $db_password    =  $this->getDriver()["db_password"];
 
         $db_connection = new PDO
         (
@@ -35,9 +37,9 @@ class Connect extends Driver
         return $db_connection;
     }
 
-    public function FetchData ( $query )
+    public function fetchData ( $query )
     {
-        $db_connection = $this->Connect();
+        $db_connection = $this->connect();
 
         if ( ! $db_connection )
         {

@@ -1,22 +1,24 @@
 <?php
 
-namespace Emeka\Todo\Database\Migrations;
+namespace Emeka\Junks\Database\Migrations;
+
 use PDO;
-use Emeka\Todo\Database\Connect;
+use Emeka\Junks\Database\Migrations;
+use Emeka\Junks\Database\Connections\Connect;
 
 class CreateItemTable extends Connect
 {
 
-    public function SetUpTable()
+    public function setUpTable()
     {
-        $db = $this->Connect();
+        $db = $this->connect();
         $table = "item";
         try
         {
             $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
             $sql ="CREATE table $table
             (
-                ID              INT PRIMARY KEY     NOT NULL,
+                ID              SERIAL PRIMARY KEY     NOT NULL,
                 TITLE           VARCHAR ( 50 )      NOT NULL,
                 MESSAGE         VARCHAR ( 50 )      NOT NULL,
                 CREATED_AT      DATE                NOT NULL,

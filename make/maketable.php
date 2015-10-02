@@ -1,16 +1,14 @@
 <?php
 ini_set('display_errors', 1);
-
+ERROR_REPORTING(E_ALL);
 require "../vendor/autoload.php";
 
-use Emeka\Todo\Model\Todo;
-use Emeka\Todo\Database\Driver;
-use Emeka\Todo\Database\Connect;
-use Emeka\Todo\Database\Migrations\CreateItemTable as Post;
+use Emeka\Junks\Database\Migrations\CreateItemTable as Post;
 
 $post = new Post;
 
 var_dump($post->setUpTable());
+
 if ($post->setUpTable())
 {
     echo "done";
