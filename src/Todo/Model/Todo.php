@@ -9,6 +9,11 @@ use Emeka\Junks\Database\Connections\Connect;
 class Todo extends Connect
 {
 
+    /*
+    | getTodoList select table from database
+    | accepts one arameter
+    | return's an array
+    */
     public function getTodoList( $table )
     {
         $query = "SELECT * FROM $table";
@@ -16,7 +21,7 @@ class Todo extends Connect
     }
 
     public function createTodo()
-     {
+    {
             $query ="INSERT INTO ITEM ( title, message, created_at, updated_at)
             VALUES('title', 'dsfvdfJJJdf', '2007-12-13', '2007-12-13')";
             return $this->fetchData( $query );

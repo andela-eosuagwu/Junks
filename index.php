@@ -3,11 +3,10 @@ ini_set('display_errors', 1);
 
 require "vendor/autoload.php";
 
-use Emeka\Todo\Model\Todo;
+use Emeka\Junks\Model\Todo;
 use Emeka\Todo\Database\Driver;
 use Emeka\Todo\Database\Connect;
 use Emeka\Todo\Database\Migrations\CreateItemTable as Post;
-
 $todolist = new Todo();
 
 ?>
