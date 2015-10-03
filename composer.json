@@ -23,5 +23,6 @@
             "Emeka\\Junks\\": "src/"
         },
         "classmap":["src/"]
-    }
+    },
+    "minimal-stability" : "dev"
 }
