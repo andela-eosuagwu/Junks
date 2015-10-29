@@ -1,0 +1,111 @@
+/*================================================
+|  Header style
+*/
+body{
+	color: gray;
+}
+
+header {
+	color: #000!important;
+	background-color: #fff!important;
+}
+
+.top-nav a {
+	color: #000!important;
+}
+
+.user-avater{
+	border-bottom-left-radius: 24px;
+	border-bottom-right-radius: 24px;
+	border-top-left-radius: 24px;
+	border-top-right-radius: 24px;
+	color: rgb(97, 97, 97);
+	display: block;
+	font-family: Roboto, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	height: 48px;
+	line-height: 18px;
+	margin-right: 16px;
+	vertical-align: middle;
+	width: 48px;
+}
+
+
+/*================================================
+|  Page content style
+*/
+.cover{
+	margin-left: 100px;	
+}
+
+.cover-logo{
+	width: 20vw;
+	margin: 0px auto;
+}
+
+.welcome-note{
+	..margin: 0px auto;
+}
+
+.idea-box{
+	margin: 5px;
+	display: inline-block;
+}
+
+
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+  text-align: left;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background: url('.../image/github.png') #46B6AC;
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+.demo-card-event.mdl-card {
+  width: 256px;
+  height: 256px;
+  background: #3E4EB8;
+}
+
+.demo-card-event > .mdl-card__actions {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.demo-card-event > .mdl-card__title {
+  align-items: flex-start;
+}
+.demo-card-event > .mdl-card__title > h4 {
+  margin-top: 0;
+}
+.demo-card-event > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.demo-card-event > .mdl-card__title,
+.demo-card-event > .mdl-card__actions,
+.demo-card-event > .mdl-card__actions > .mdl-button {
+  color: #fff;
+}
+
+
+
+
+
+
+
+/*================================================
+|  Footer-style
+*/
+footer{
+	height: 10px;
+	background: #eee;
+}

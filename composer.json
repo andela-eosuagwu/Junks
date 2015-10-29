@@ -1,34 +1,47 @@
 {
     "name": "emeka/junks",
     "description": "",
+    "type": "PHP",
     "license": "MIT",
-    "authors": [
+    "authors": 
+    [
         {
-            "name": "emeka",
-            "homepage": "https://github.com/andela-eosuagwu/Evangelist",
+            "name": "Emeka Osuagwu",
             "email": "emekaosuagwuandela@gmail.com",
+            "homepage": "https://github.com/andela-eosuagwu/SweetEmoji",
             "role": "Software Developer"
         }
     ],
-    "require": {
-        "php" : ">=5.5.9",
+    "keywords": [
+        "Junks"
+    ],
+    "minimum-stability": "dev",
+    "require": 
+    {
+        "php": ">=5.3.0",
         "vlucas/phpdotenv": "^2.0",
-        "nesbot/carbon": "^1.20"
+        "emeka/candy": "dev-master"
     },
-    "require-dev": {
+    "require-dev": 
+    {
         "phpunit/phpunit" : "4.*"
     },
-    "autoload": {
-        "psr-4": {
-            "Emeka\\Junks\\": "src/"
-        },
-        "classmap":["src/"]
-    },
-    "authors": [
+    "autoload": 
+    {
+        "psr-4": 
         {
-            "name": "Emeka Osuagwu",
-            "email": "emekaosuagwu@hotmail.com"
+            "Emeka\\": "src"
         }
-    ],
-    "minimum-stability": "dev"
+    },
+    "autoload-dev": 
+    {
+        "psr-4": 
+        {
+            "Test\\": "tests/"
+        }
+    },
+    "scripts": 
+    {
+        "test": "phpunit"
+    }
 }
